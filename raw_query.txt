@@ -1,0 +1,16 @@
+
+
+Task 2b-- query
+
+SELECT "api_ratings"."id", "api_ratings"."movie_id", 
+"api_ratings"."tconst", "api_ratings"."avg_rating", 
+"api_ratings"."votes" FROM "api_ratings" 
+WHERE "api_ratings"."avg_rating" >= 6.600 ORDER BY 
+"api_ratings"."avg_rating" DESC
+
+Task 2a-- query
+
+SELECT "api_movie"."id", "api_movie"."tconst", 
+"api_movie"."titleType", "api_movie"."primary_title", 
+"api_movie"."runtime", "api_movie"."genres" FROM "api_movie" 
+ORDER BY "api_movie"."runtime" DESC LIMIT 10
